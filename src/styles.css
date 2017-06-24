@@ -1,24 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
-
 body {
   background: rgba(0, 0, 0, 0.150);
 }
 
-div.main {
-
-}
-
 .main-title {
   margin-top: 200px;
-  width: 90%;
   font-size: 6em;
   text-transform: uppercase;
 }
 
-.main-title-small {
-  margin-top: 100px;
-  font-size: 3em;
-  text-transform: uppercase;
+@media only screen and (min-width: 768px) {
+  .main-title {
+    margin-top: 100px;
+    font-size: 3em;
+    text-transform: uppercase;
+  }
 }
 
 p.construction i.material-icons {
