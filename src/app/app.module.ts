@@ -9,13 +9,10 @@ import { IndexComponent } from './components/index/index.component';
 import { TestComponent } from './components/test/test.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/index', pathMatch: 'full' },
   { path: 'index', component: IndexComponent },
   { path: 'test', component: TestComponent },
-  { path: '**', redirectTo: '/index', pathMatch: 'full' }/*,
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'musica', component: MusicaComponent }*/
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  { path: '**', redirectTo: '/index', pathMatch: 'full' }
 ];
 
 @NgModule({
